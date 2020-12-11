@@ -13,25 +13,24 @@ the font is called 'nunito' and can be found on google fonts
 
 */
 body {
-    padding: 10px;
     background-color: black;
 }
 
 header {
-    width: 75%;
-    height: 10px;
+    width: 80%;
+    height: 50px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     color: white;
-    margin: 0 75px;
     padding: 0 0 0 75px;
+    box-sizing: content-box;
 }
 .content {
-    width: 85%;
+    width: 80%;
     background-color: white;
-    margin: 50px 0 0 75px;
-    display: flex;
+    margin: 0 0 0 75px;
+    box-sizing: border-box;
     justify-content: center;
 }
 
@@ -41,12 +40,19 @@ header {
     margin: 0 auto;
     padding: 10px 200px 20px 10px;
     font-family: helvetica light;
+    font-size: 14px;
 }
-.profile-box{
-
+.popular-box{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: gray 2px;
+    border: 1 gray;
 }
 .image-box{
-    width: 60%;
+    width: 80%;
     height: 400 px;
     display: block;
 }
@@ -57,7 +63,7 @@ img {
     justify-content: left;
 }
 .footer {
-    width: 85%;
+    width: 80%;
     height: 5vh;
     background-color:rgb(42, 171, 226);
     margin: 0 0 0 75px;

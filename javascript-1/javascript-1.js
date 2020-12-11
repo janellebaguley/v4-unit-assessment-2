@@ -38,7 +38,7 @@ const savannah = ['lion', 'zebra', 'lion', 'giraffe']
 const desert = ['rattlesnake', 'coyote']
 //DO NOT EDIT CODE ABOVE
 
-let animals = [...forest, ...ocean, ...savannah, ...desert]
+// let animals = [...forest, ...ocean, ...savannah, ...desert]
 
 
 /*
@@ -46,7 +46,7 @@ let animals = [...forest, ...ocean, ...savannah, ...desert]
     Call the new array 'animalsCopy' and add 'elephant' onto the end of the array.
 */
 
-let animalsCopy = [...forest, ...ocean, ...savannah, ...desert]
+// let animalsCopy = [...forest, ...ocean, ...savannah, ...desert]
 
 
 ////////////////////PROBLEM 4////////////////////
@@ -71,7 +71,7 @@ let animalsCopy = [...forest, ...ocean, ...savannah, ...desert]
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-const bestMovie = (movie) =>  '${movie} is the best movie ever!';
+// const bestMovie = (movie) =>  '${movie} is the best movie ever!';
   
   
 ////////////////////PROBLEM 6////////////////////
@@ -99,7 +99,7 @@ const bestMovie = (movie) =>  '${movie} is the best movie ever!';
     delete the rating property off of the gameInfo object.
 */
 
-delete gameInfo.rating;
+// delete gameInfo.rating;
   
 
 ////////////////////PROBLEM 8////////////////////
@@ -196,12 +196,12 @@ let pairsArray = []
     Those values should come from the functions parameters: name, age, breed, tricks (in order).
 */
 
-function Dog(name, age, breed, tricks){
-    this.name = name;
-    this.age = age;
-    this.breed = breed;
-    this.tricks = tricks;
-}
+// function Dog(name, age, breed, tricks){
+//     this.name = name;
+//     this.age = age;
+//     this.breed = breed;
+//     this.tricks = tricks;
+// }
 
 
 /*
@@ -210,7 +210,7 @@ function Dog(name, age, breed, tricks){
     Store the result in a variable called 'fido'.
 */
 
-const fido = new Dog('Fido', 3, 'Jack Russell', ['sit', 'shake'])
+// const fido = new Dog('Fido', 3, 'Jack Russell', ['sit', 'shake'])
   
 
 ////////////////////PROBLEM 12////////////////////
@@ -220,9 +220,9 @@ const fido = new Dog('Fido', 3, 'Jack Russell', ['sit', 'shake'])
     NAME will come from that context, so you should reference 'this.name' to get the correct name.
 */
 
-function bark(){
-    alert(`${this.name} says bark!`);
-    };
+// function bark(){
+//     alert(`${this.name} says bark!`);
+//     };
 
 
 /*
@@ -230,7 +230,7 @@ function bark(){
     and saving the result to a variable called fidoSpeak.
 */
 
-fido.bark.call('fido')
+// fido.bark.call('fido')
   
   
 ////////////////////PROBLEM 13////////////////////
@@ -241,9 +241,9 @@ fido.bark.call('fido')
     Tricks will come from that context, so you should reference 'this.tricks' to access the correct array.
 */
 
-function teachTrick(trick){
-    this.tricks = tricks;
-}
+// function teachTrick(trick){
+//     this.tricks = tricks;
+// }
 
 
 /*
@@ -262,10 +262,10 @@ function teachTrick(trick){
     Remember to use the 'this' keyword to access values from the context that you will apply.
 */
 
-function dogIntro(treat, toy){
-    alert(`${this.name} is a ${this.breed} that loves ${treat} and their ${toy}!`);
-}
-fido.dogIntro.apply()
+// function dogIntro(treat, toy){
+//     alert(`${this.name} is a ${this.breed} that loves ${treat} and their ${toy}!`);
+// }
+// fido.dogIntro.apply()
 
 /*
     Invoke the apply method on dogIntro, passing in fido as the context 

@@ -8,7 +8,9 @@
     Call the array 'myArr'.
 */
 
-//CODE HERE
+const e = require("cors")
+
+let myArr = [4,'abc', ['cat', 'dog', 'bird'], 77]
 
 
 ////////////////////PROBLEM 2////////////////////
@@ -20,7 +22,7 @@
 
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
-//CODE HERE
+// let foundZ = 
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -36,7 +38,7 @@ const savannah = ['lion', 'zebra', 'lion', 'giraffe']
 const desert = ['rattlesnake', 'coyote']
 //DO NOT EDIT CODE ABOVE
 
-//CODE HERE
+let animals = [...forest, ...ocean, ...savannah, ...desert]
 
 
 /*
@@ -44,7 +46,7 @@ const desert = ['rattlesnake', 'coyote']
     Call the new array 'animalsCopy' and add 'elephant' onto the end of the array.
 */
 
-//CODE HERE
+let animalsCopy = [...forest, ...ocean, ...savannah, ...desert]
 
 
 ////////////////////PROBLEM 4////////////////////
@@ -55,7 +57,9 @@ const desert = ['rattlesnake', 'coyote']
     If the numbers are the same, just return the number.
 */
 
-//CODE HERE
+// const compareNums = (num1, num2) => {
+    
+// }
 
   
 ////////////////////PROBLEM 5////////////////////
@@ -67,7 +71,7 @@ const desert = ['rattlesnake', 'coyote']
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
+const bestMovie = (movie) =>  '${movie} is the best movie ever!';
   
   
 ////////////////////PROBLEM 6////////////////////
@@ -75,8 +79,7 @@ const desert = ['rattlesnake', 'coyote']
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//CODE HERE
-  
+// const jsNinja = ()=> {return 'I am a JavaScript ninja!';}
 
 ////////////////////PROBLEM 7////////////////////
 
@@ -96,7 +99,7 @@ const desert = ['rattlesnake', 'coyote']
     delete the rating property off of the gameInfo object.
 */
 
-//CODE HERE
+delete gameInfo.rating;
   
 
 ////////////////////PROBLEM 8////////////////////
@@ -193,7 +196,12 @@ let pairsArray = []
     Those values should come from the functions parameters: name, age, breed, tricks (in order).
 */
 
-//CODE HERE
+function Dog(name, age, breed, tricks){
+    this.name = name;
+    this.age = age;
+    this.breed = breed;
+    this.tricks = tricks;
+}
 
 
 /*
@@ -202,7 +210,7 @@ let pairsArray = []
     Store the result in a variable called 'fido'.
 */
 
-//CODE HERE
+const fido = new Dog('Fido', 3, 'Jack Russell', ['sit', 'shake'])
   
 
 ////////////////////PROBLEM 12////////////////////
@@ -212,7 +220,9 @@ let pairsArray = []
     NAME will come from that context, so you should reference 'this.name' to get the correct name.
 */
 
-//CODE HERE
+function bark(){
+    alert(`${this.name} says bark!`);
+    };
 
 
 /*
@@ -220,7 +230,7 @@ let pairsArray = []
     and saving the result to a variable called fidoSpeak.
 */
 
-//CODE HERE
+fido.bark.call('fido')
   
   
 ////////////////////PROBLEM 13////////////////////
@@ -231,7 +241,9 @@ let pairsArray = []
     Tricks will come from that context, so you should reference 'this.tricks' to access the correct array.
 */
 
-//CODE HERE
+function teachTrick(trick){
+    this.tricks = tricks;
+}
 
 
 /*
@@ -250,8 +262,10 @@ let pairsArray = []
     Remember to use the 'this' keyword to access values from the context that you will apply.
 */
 
-//CODE HERE
-
+function dogIntro(treat, toy){
+    alert(`${this.name} is a ${this.breed} that loves ${treat} and their ${toy}!`);
+}
+fido.dogIntro.apply()
 
 /*
     Invoke the apply method on dogIntro, passing in fido as the context 
@@ -259,7 +273,7 @@ let pairsArray = []
     and save the result to a variable called fidoIntro.
 */
 
-//CODE HERE
+// fido.dogIntro.apply(fido, ['chicken', 'tennis ball'])
   
 
 ////////////////////PROBLEM 15////////////////////
@@ -269,7 +283,13 @@ let pairsArray = []
     Those values should come from the function's parameters: brand, model, storage, color, sold (in order).
 */
 
-//CODE HERE
+// function Phone(brand, model, storage, color, sold){
+//     this.brand = brand;
+//     this.model= model;
+//     this.storage = storage;
+//     this.color = color;
+//     this.sold = sold;
+// }
 
   
 /*
@@ -284,7 +304,7 @@ let pairsArray = []
 */
 
 //CODE HERE
-  // let phone1 = 
+//   let phone1 =  new Phone('Samsung', 'Galaxy', '32 GB', 'blue', false);
   
   // let phone2 = 
   
@@ -298,6 +318,8 @@ let pairsArray = []
     Don't forget about the context of BRAND and MODEL.
 */
 
-//CODE HERE
+// Phone.prototype.sell = function(){
+
+// }
 
   

@@ -15,7 +15,6 @@ the font is called 'nunito' and can be found on google fonts
 body {
     background-color: black;
 }
-
 header {
     width: 100%;
     height: 0;
@@ -53,18 +52,19 @@ header-2 {
     margin: 0 auto;
     padding: 10px 200px 0 10px;
     font-family: helvetica light;
-    font-size: 14px;
+    font-size: 16px;
 }
-.profile-box{
-    width: 150px;
-    height: 250px;
-    justify-content: right;
+/* .profile-box{
+    width: 100px;
+    height: 25px;
+    justify-content: space-around;
+    /* margin: 0 0 0 500px; */
     background-color: white;
     box-sizing: border-box;
-    display: inline;
+    display: flex;
     border: 1px rgb(215, 215, 215);
     box-shadow: 2px 2px 2px 2px rgb(215, 215, 215);
-}
+} */
 /* .popular-box{
     width: 100px;
     height: 100px;
@@ -73,7 +73,7 @@ header-2 {
     box-sizing: border-box;
     box-shadow: gray 2px;
     border: 1 gray;
-} */
+}  */
 .image-box{
     width: 65%;
     height: 300px;
@@ -93,6 +93,9 @@ img {
     background-color:rgb(42, 171, 226);
     margin: 0 0 0 75px;
     padding: 20px 0 0 0;
+}
+icon {
+ position: sticky;
 }
 h6 {
     color: black;

@@ -35,11 +35,9 @@ let foods = [
   and then adding the results together. 
 */
 
-// foods.forEach(function(element){
-//  return calories = `${calories}` ${element}`;`
+// foods.forEach(e =>{
+//   foods.push(e.calories())
 // })
-// return calories
-// }
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -84,9 +82,8 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-const saleProducts = products.map(function(e){
-  return e *= .25;
-})
+// const saleProducts = products.map(function(e, i, arr){ return e *= .25
+// })
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -96,7 +93,9 @@ const saleProducts = products.map(function(e){
   (Hint: look up the array method 'includes' on MDN)
 */
 
-// const blueProducts = saleProducts.filter(element => element.includes('blue'))
+// let blueProducts = saleProducts.filter(function(e, i, arr){ 
+//   return e.includes('blue')
+// }  
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -222,6 +221,7 @@ const userInfo = {
 */
 
 //CODE HERE
+let shouldAlert= userInfo.settings.alerts === 'gn@rly_c0der)007';
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -230,6 +230,7 @@ const userInfo = {
 */
 
 //CODE HERE
+let topic = userInfo.topics[3]
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -238,6 +239,7 @@ const userInfo = {
 */
 
 //CODE HERE
+// let commenterId = userInfo.comments.responses.userId[1]
 
 ////////////////////PROBLEM 12////////////////////
 /*

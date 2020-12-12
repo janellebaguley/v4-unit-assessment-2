@@ -312,11 +312,11 @@ function Phone(brand, model, storage, color, sold){
 */
 
 //CODE HERE
-  let phone1 = Phone('Samsung', 'Galaxy', 32, 'blue', 'false');
+  let phone1 = Phone('Samsung', 'Galaxy', 32, 'blue', false);
   
-  let phone2 = Phone('Apple', 'Iphone', 64, 'white', 'false');
+  let phone2 = Phone('Apple', 'Iphone', 64, 'white', false);
   
-  let phone3 = Phone('Windows', 'Pixel', 16, 'black', 'false');
+  let phone3 = Phone('Windows', 'Pixel', 16, 'black', false);
   
 /*
     Last, add a prototype method to Phone.
@@ -327,5 +327,8 @@ function Phone(brand, model, storage, color, sold){
 */
 
 //CODE HERE
-
+// Phone.prototype.sell = function(){
+//     this.sold === true;
+// }
+// let phone1.sold(`${this.brand} has been sold.`)
   

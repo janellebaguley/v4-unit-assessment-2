@@ -21,10 +21,11 @@ let myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77]
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
 //CODE HERE
-// for (let i = 0; i < Array.length; i++){
-//     nestedLetters[i] === 'z';
+// let foundZ = for(let i = 0; i < nestedLetters.length; i++){
+//     for(let j = i + 1; j < nestedLetters; j++){
+//         for(let k = i + 1; k < nestedLetters; k++)
+//     }
 // }
-// let foundZ =nesteLetters[i]
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -126,9 +127,10 @@ delete gameInfo.rating;
 */
 
 //CODE HERE
+
 for(let key in shapes){
     if(key % 2 === 1){
-    shapes[key]}
+    delete shapes[key]}
 } 
   
 ////////////////////PROBLEM 9////////////////////
@@ -171,7 +173,14 @@ const classes = [
 */
 
 //CODE HERE
-
+for(let i = 0; i < classes.length; i++){
+    for(let key in classes[i]){
+      if(key === 'inPerson'){
+        for(let j = 0; j < classes[i].inPerson.length; j++){
+        }
+      }
+    }
+  }
   
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -185,6 +194,16 @@ const classes = [
 const lettersToPair = ['e', 'k', 's', 'a', 'e', 's', 'a', 'n', 'k', 'n']  
 let pairsArray = []
 //DO NOT EDIT CODE ABOVE
+// for(let i = 0; i < arr.length; i++){
+//     for(let j = i+1; j < arr.length; j++){
+//         if(lettersToPair[i] === lettersToPair[j]){
+//           lettersToPair[i, j]
+//         }
+//       }
+//     }
+//     return lettersToPair
+//   }
+// }
 
 //CODE HERE
 
@@ -250,7 +269,7 @@ const fidoSpeak = bark.call(fido);
 
 //CODE HERE
 function teachTrick (trick){
-    this.tricks.bind('new trick')
+    this.tricks.bind()
 }
 
 /*
@@ -259,8 +278,7 @@ function teachTrick (trick){
 */
 
 //CODE HERE
-// const teachStay = teachTrick.bind(fido, 'stay')
-// teachStay()
+const teachStay = teachTrick.bind(fido, ['stay'])
   
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -274,6 +292,7 @@ function teachTrick (trick){
 function dogIntro (treat, toy){
    return `${this.name} is a ${this.breed} that loves ${this.treat} and their ${this.toy}!`
 }
+dogIntro.apply(fido, breed, [treat, toy])
 
 /*
     Invoke the apply method on dogIntro, passing in fido as the context 
@@ -282,7 +301,7 @@ function dogIntro (treat, toy){
 */
 
 //CODE HERE
-const fidoIntro = dogIntro.apply(fido, 'chicken', 'tennis ball')
+const fidoIntro = dogIntro.apply(fido, ['chicken'], ['tennis ball'])
 
 ////////////////////PROBLEM 15////////////////////
 /*

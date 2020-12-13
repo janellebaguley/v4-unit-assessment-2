@@ -106,7 +106,7 @@ let blueProducts = products.filter(function saleProducts(price){
 */
 
 //CODE HERE
-const orderTotal = blueProducts.reduce(function(acc, e, index, arr){
+const orderTotal = blueProducts.reduce(function reduce(acc, e, index, arr){
   return (acc += e)
 }, 0)
 
@@ -243,7 +243,7 @@ let topic = userInfo.topics[3]
 */
 
 //CODE HERE
-// let commenterId = userInfo.userId[1]
+// let commenterId = userInfo.comments.comment[2].responses[1];
 // const {commenterId} = userInfo.userId[1]
 
 ////////////////////PROBLEM 12////////////////////
@@ -274,13 +274,15 @@ const person = {
       color: 'blue',
       number: 3,
       book: 'SeaPriestess'},
-  kids: {
-          name: 'Jane',
-          age: 2,
-        },
-          name: 'John',
-          age: 4,
-        }
+  kids: [
+         { name: 'Jane',
+          age: 2},
+      
+          {name: 'John',
+          age: 4
+        } 
+      ] 
+    } 
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*

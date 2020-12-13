@@ -82,8 +82,9 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-// const saleProducts = products.map(function(e, i, arr){ return e *= .25
-// })
+  let saleProducts = products.map(function multiply(price){
+    return price * .25;
+  })
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -93,9 +94,9 @@ const products = [
   (Hint: look up the array method 'includes' on MDN)
 */
 
-// let blueProducts = saleProducts.filter(function(e, i, arr){ 
-//   return e.includes('blue')
-// }  
+let blueProducts = products.filter(function saleProducts(price){
+  return products.includes('blue');
+})
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -105,6 +106,9 @@ const products = [
 */
 
 //CODE HERE
+const orderTotal = blueProducts.reduce(function(acc, e, index, arr){
+  return (acc += e)
+}, 0)
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -239,7 +243,8 @@ let topic = userInfo.topics[3]
 */
 
 //CODE HERE
-// let commenterId = userInfo.comments.responses.userId[1]
+// let commenterId = userInfo.userId[1]
+// const {commenterId} = userInfo.userId[1]
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -262,24 +267,20 @@ const person = {
     name: 'Janelle',
     age: 40,
     jobs: ['sandwich artist', 'QA', 'customer service'],
-    // birthday: ,
-    // favorites: [
-      // {
-      // color: 'blue',
-      // number: 3,
-      // book: 'SeaPriestess']},
-//   kids: [
-//         kid1: {
-//           name: '',
-//           age:
-//         },
-//         kid2: {
-//           name: '',
-//           age:
-//         }
-//       ]
-//     }
-}
+    birthday: function happyBday(){
+      alert(this.age += 1)
+    },
+    favorites: {
+      color: 'blue',
+      number: 3,
+      book: 'SeaPriestess'},
+  kids: {
+          name: 'Jane',
+          age: 2,
+        },
+          name: 'John',
+          age: 4,
+        }
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
